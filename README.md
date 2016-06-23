@@ -1,2 +1,2 @@
-# test2github
+# CI-Gazer
 Report test executions to GitHub through the status API
