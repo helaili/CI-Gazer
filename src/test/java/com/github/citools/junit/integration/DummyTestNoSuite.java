@@ -1,4 +1,4 @@
-package com.github.citools.test.integration;
+package com.github.citools.junit.integration;
 
 import static org.junit.Assert.*;
 

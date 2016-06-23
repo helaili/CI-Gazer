@@ -33,7 +33,7 @@
 						</property>
 					</properties> 
 					<excludes>
-						<exclude>com.github.citools.test.integration.*</exclude>
+						<exclude>com.github.citools.junit.integration.*</exclude>
 					</excludes>
 				</configuration>
 			</plugin>
@@ -57,7 +57,7 @@
 						</property>
 					</properties>
 					<includes>
-						<include>com.github.citools.test.integration.*Suite</include>
+						<include>com.github.citools.junit.integration.*Suite</include>
 					</includes>
 				</configuration>
 			</plugin>

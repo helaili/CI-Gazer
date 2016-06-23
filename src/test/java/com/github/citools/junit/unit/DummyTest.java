@@ -1,4 +1,4 @@
-package com.github.citools.test.unit;
+package com.github.citools.junit.unit;
 
 import static org.junit.Assert.assertTrue;
 

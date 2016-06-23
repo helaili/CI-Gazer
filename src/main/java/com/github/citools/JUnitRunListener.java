@@ -1,7 +1,6 @@
 package com.github.citools;
 
 
-import java.util.ArrayList;
 import java.util.logging.Logger;
 
 import org.junit.runner.Description;
@@ -81,6 +80,7 @@ public class JUnitRunListener extends org.junit.runner.notification.RunListener 
 
 	@Override
 	public void testSuiteStarted(Description description) throws Exception {
+		//According to JUnit, whatever is not a test case is a test suite.
 		if(isSuite(description)) {
 			testSuiteClassStarted(description);
 		} else {
@@ -89,6 +89,7 @@ public class JUnitRunListener extends org.junit.runner.notification.RunListener 
 	}
 	
 	public boolean isSuite(Description description) {
+		//If if it's a suite and a child is a suite, then it's really a suite. 
 		return description.isSuite() && description.getChildren().get(0).isSuite();
 	}
 	
